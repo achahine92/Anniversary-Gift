@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Moon+Dance&display=swap')    
+body 
+    height: 100vh
+    background-image: url("/public/anniversary-website-pics/backgroundHEIC.png")
+    background-size: cover
+    background-position: center
+    font-family: EB Garamond, sans-serif
+    font-weight: none
+    color: white
+
+.wrapper
+    display: flex
+    align-items: center
+    justify-content: center
+
+nav
+    display: flex 
+    flex-direction: column
+    align-items: center
+    h1
+        font-size: 60px
+        border: 1px solid white
+        padding: 30px
+        font-family: Moon Dance, sans-serif
+
+.home-header
+    margin-top: 100px
+    h3
+        text-align: center
+        font-size: 40px
+    p 
+        font-size: 25px
+
+.home-options
+    display: flex
+    justify-content: center
+
+button 
+    padding: 5px
+    margin: 40px
+    font-size: 16px
+    border-radius: 10%
+    width: 100px
+    height: 50px
+    background-color: black
+    color: white
+    font-weight: bold
+    cursor: pointer
+    &:hover
+        background-color: white
+        color: black
+    
+.game
+    margin: 40px 0px
+    display: flex
+    flex-direction: column
+    align-items: center
+
+h2 
+    text-align: center
+    font-size: 40px
+
+h4
+    text-align: center
+    font-size: 25px
+
+.questions
+    padding: 20px
+    width: 70%
+    height: 80%
+    .question-card
+        border: 1px solid white
+        text-align: center
+        padding: 20px 30px
+        font-size: 30px
+        cursor: pointer
+        background: linear-gradient(to top, #3ef0c3, #f15627, #18e1f3)
+        &:hover
+            border: 5px solid transparent
+            border-image: linear-gradient(to left, #f2521d, #ee9074) 1
+
+.game-end
+    text-align: center
+    border: 3px solid white
+    background: linear-gradient(to top, #3ef0c3, #f15627, #18e1f3)
+    padding: 20px 30px
+    font-size: 30px
+
+.gallery
+    display: grid
+    grid-template-columns: repeat(7, 1fr)
+    gap: 5px 15px
+    padding: 20px
+    text-align: center
+    width: 100%
+    & .image-container
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        width: 100%
+        & .description
+            width: 300px
+            height: 200px
+            border: 3px solid white
+            background: linear-gradient(to top, #3ef0c3, #f15627, #18e1f3)
+            border-radius: 10px
+            text-align: center
+            display: flex
+            justify-content: center
+            align-items: center
+            padding: 10px
+
+.image
+    width: 100px
+    height: 100px
+    border-radius: 8px
+    overflow: hidden
+    cursor: pointer
+    padding: 20px
+    //transition: transform 0.3s ease-in-out 2s
+    & img 
+        width: 100%
+        height: auto
+        border-radius: 8px
+        transition: transform 0.3s ease-in-out 2s
+    &:hover 
+        width: 400px
+        height: 400px
